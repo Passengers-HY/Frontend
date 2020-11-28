@@ -1,0 +1,81 @@
+.page{
+    text-align:center;
+}
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.Button_navy{  
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    width: 80%;
+    height: 44px;
+    background: #28293c;
+    padding: 0.25rem 1rem;
+    font-family: 'IBMPlexSansKR-Regular';
+
+}
+
+.Button_navy:hover {
+    background:gray;
+}
+
+.Button_gray{
+    font-family: 'IBMPlexSansKR-Regular';
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    width: 80%;
+    height: 44px;
+    background: #c8bbb3;
+    text-align: center;
+}
+
+.Button_gray:hover {
+    background: gray;
+}
+
+.Button_navy_small{  
+    font-family: 'IBMPlexSansKR-Regular';
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    background: #28293c;
+}
+
+.Button_navy_small:hover {
+    background:gray;
+}
+
+.Button_gray_small{
+    font-family: 'IBMPlexSansKR-Regular';
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    background: #c8bbb3;
+    text-align: center;
+
+}
+
+.Button_gray_small:hover {
+    background: gray;
+}

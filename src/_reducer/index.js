@@ -1,0 +1,11 @@
+import { combineReducers } from "redux";
+import user from './user_reducer';
+import date from './date_reducer';
+import pill from './pill_reducer';
+
+const rootReducer = combineReducers({
+    user,
+    date,
+    pill,
+})
+export default rootReducer;
