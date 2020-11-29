@@ -3,7 +3,7 @@ import { REGISTER_USER, LOGIN_USER, LOGOUT_USER } from "./types";
 
 export function loginUser(dataToSubmit) {
   const request = axios
-    .post("http://3.34.183.92/api/auth/login", dataToSubmit, {withCredentials:true})
+    .post("http://3.34.183.92:4000/api/auth/login", dataToSubmit, {withCredentials:true})
     .then((response) => response.data);
 
   return {
@@ -15,7 +15,7 @@ export function loginUser(dataToSubmit) {
 export function registerUser(dataTosubmit) {
   //서버에서 받은 데이터를 request에 저장
   const request = axios
-    .post("http://3.34.183.92/api/auth/register", dataTosubmit)
+    .post("http://3.34.183.92:4000/api/auth/register", dataTosubmit)
     .then((response) => response.data);
 
   //리턴 시켜서 리듀서로 보내기
@@ -27,7 +27,7 @@ export function registerUser(dataTosubmit) {
 
 export function logoutUser() {
   const request = axios
-    .get("http://3.34.183.92/api/auth/logout", {withCredentials:true})
+    .get("http://3.34.183.92:4000/api/auth/logout", {withCredentials:true})
     .then((response) => response.data);
 
   return {
