@@ -3,7 +3,7 @@ import { INPUT_PILL, OUTPUT_PILL } from "./types";
 
 export function inputPill(dataTosubmit) {
   const request = axios
-    .post("http://3.34.183.92:4000/api/main/control", dataTosubmit, {withCredentials:true})
+    .post("http://3.34.183.92:4000/api/main/control", dataTosubmit, {credentials:true})
     .then((response) => response.data)
     .catch((error)=>console.log('에러', error.response.data));
 
@@ -28,7 +28,7 @@ export function outputPill() {
   today = yyyy + "-" + mm + "-" + dd;
   date = today;
   const request = axios
-  .get("http://3.34.183.92:4000/api/control/", {params:{date}, withCredentials:true})
+  .get("http://3.34.183.92:4000/api/control/", {params:{date}, credentials:true})
   .then((response) => response.data)
   .catch((error)=>console.log('에러', error.response.data));
 

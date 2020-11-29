@@ -16,7 +16,7 @@ export function inputDate(dataTosubmit) {
 
 export function outputDate() {
   const request = axios
-  .get("http://3.34.183.92:4000/api/main", {params:{Date_send}, withCredentials:true})
+  .get("http://3.34.183.92:4000/api/main", {params:{Date_send}, credentials:true})
   .then((response) => response.data)
   .catch((error)=>console.log(error.response.data));
 
@@ -28,7 +28,7 @@ export function outputDate() {
 
 export function todayDate() {
   const request = axios
-  .get("http://3.34.183.92:4000/api/main/today", {params:{Today_send}, withCredentials:true})
+  .get("http://3.34.183.92:4000/api/main/today", {params:{Today_send}, credentials:true})
   .then((response)=> response.data)
   .catch((error)=>console.log(error.response.data));
 
