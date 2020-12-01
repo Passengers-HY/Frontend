@@ -1,11 +1,11 @@
 import axios from "axios";
 import { REGISTER_USER, LOGIN_USER, LOGOUT_USER } from "./types";
 axios.defaults.withCredentials=true;
+
 export function loginUser(dataToSubmit) {
   const request = axios
-    .post("http://3.34.183.92:4000/api/auth/login", dataToSubmit)
+    .post("http://3.34.183.92:4000/api/auth/login", dataToSubmit, {withCredentials:true})
     .then((response) => response.data);
-
 
   return {
     type: LOGIN_USER,

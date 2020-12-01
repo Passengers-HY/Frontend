@@ -1,9 +1,10 @@
 import axios from "axios";
 import { INPUT_PILL, OUTPUT_PILL } from "./types";
+
 axios.defaults.withCredentials=true;
 export function inputPill(dataTosubmit) {
   const request = axios
-    .post("http://3.34.183.92:4000/api/main/control", dataTosubmit)
+    .post("http://3.34.183.92:4000/api/main/control", dataTosubmit, {withCredentials:true})
     .then((response) => response.data)
     .catch((error)=>console.log('에러', error.response.data));
 
@@ -28,7 +29,7 @@ export function outputPill() {
   today = yyyy + "-" + mm + "-" + dd;
   date = today;
   const request = axios
-  .get("http://3.34.183.92:4000/api/control/", {params:{date}})
+  .get("http://3.34.183.92:4000/api/control/", {params:{date}, withCredentials:true})
   .then((response) => response.data)
   .catch((error)=>console.log('에러', error.response.data));
 
