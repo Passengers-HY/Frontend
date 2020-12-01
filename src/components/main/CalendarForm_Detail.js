@@ -123,7 +123,7 @@ function CalendarForm_Detail(props) {
     var date_Mood;
     var date_Condition;
     var date_Memo;
-    if (cycleStart === "" && cycleEnd==="" && isControl==="" &&isSex===""&&isProtection===""&&dateMood===""&&dateCondition===""&&dateMemo===""){
+    if (cycleStart === "" && cycleEnd==="" && isControl==="" &&isSex===""&&isProtection===""&&dateMood===""&&dateCondition[0]===""&&dateMemo===""){
       document.getElementById("none").style.display = "block";
     }
     if (cycleStart === "") {
