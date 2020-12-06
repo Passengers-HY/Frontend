@@ -1,7 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import MainForm from "../components/main/MainForm";
-import homeIMG from "../images/home_navy_svg.svg";
 import circleIMG from "../images/circle_svg.svg";
 import { withRouter } from "react-router-dom";
 import { todayDate } from "../_actions/date_action";
@@ -12,7 +11,6 @@ let Body;
 
 const MainPage = (props) => {
   const dispatch = useDispatch();
-
   const onClickHandler = (event) => {
     //event.preventDefault();
     var today = new Date();
@@ -29,19 +27,19 @@ const MainPage = (props) => {
 
     today = yyyy + "-" + mm + "-" + dd;
     Today_send = today;
-
+    
     dispatch(todayDate()).then((response) => {
       console.log(response.payload);
       if (response.payload === "입력된 정보가 없습니다.") {
         console.log(response.payload, "새로운 정보를 입력하세요");
         props.history.push(
-          "/calendar_detail/" + props.match.params.name + "/" + today
+          "/calendar_detail/" + props.match.params.name + "/" + today+ "/" + props.match.params.id
         );
       } else {
         console.log("오늘 페이지로 이동 ", today);
         Body = response.payload;
         props.history.push(
-          "/calendar_today/" + props.match.params.name + "/" + today
+          "/calendar_today/" + props.match.params.name + "/" + today + "/" + props.match.params.id
         );
       }
     });
@@ -85,7 +83,8 @@ const MainPage = (props) => {
         </span>
       </div>
       <div style={{padding:'10%', marginTop:'20px', textAlign:'center'}}>
-      <span>(o゜▽゜)o☆ {props.match.params.name}님, 오늘은 좋은 일만 가득할거예요!</span>
+      <span>(o゜▽゜)o☆ {props.match.params.name}님, 오늘은 좋은 일만 가득할거예요!<br/>
+      {props.match.params.name}님의 NUGU 스피커 ID는 {props.match.params.id}입니다.</span>
       </div><UnderbarForm/>
     </div>
     

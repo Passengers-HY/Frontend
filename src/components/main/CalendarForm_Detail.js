@@ -128,7 +128,7 @@ function CalendarForm_Detail(props) {
   const onClickHandler = (event) => {
     //event.preventDefault();
     console.log("캘린더 페이지로 이동 ", props.match.params.date);
-    props.history.push("/calendar/" + props.match.params.name);
+    props.history.push("/calendar/" + props.match.params.name + "/"+ props.match.params.id);
   };
 
   const onSubmitHandler = (event) => {
