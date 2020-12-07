@@ -10,6 +10,11 @@ var Today_send = 0;
 let Body;
 
 const MainPage = (props) => {
+
+  var message = ["오늘은 좋은 일만 가득할 거예요!", "오늘은 행운이 가득할 거예요!", "조금만 더 힘내세요!"];
+  var sentence = message[Math.floor(Math.random()*message.length)];
+  console.log(sentence);
+
   const dispatch = useDispatch();
   const onClickHandler = (event) => {
     //event.preventDefault();
@@ -83,7 +88,7 @@ const MainPage = (props) => {
         </span>
       </div>
       <div style={{padding:'10%', marginTop:'20px', textAlign:'center'}}>
-      <span>(o゜▽゜)o☆ {props.match.params.name}님, 오늘은 좋은 일만 가득할거예요!<br/>
+      <span>(o゜▽゜)o☆ {props.match.params.name}님, {sentence}<br/>
       {props.match.params.name}님의 NUGU 스피커 ID는 {props.match.params.id}입니다.</span>
       </div><UnderbarForm/>
     </div>
