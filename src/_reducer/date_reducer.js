@@ -1,4 +1,4 @@
-import {INPUT_DATE, OUTPUT_DATE, TODAY_DATE} from '../_actions/types';
+import {INPUT_DATE, OUTPUT_DATE, TODAY_DATE, COLOR_DATE} from '../_actions/types';
 
 
 export default function (state = {}, action) {

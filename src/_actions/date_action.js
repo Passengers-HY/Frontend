@@ -1,5 +1,5 @@
 import axios from "axios";
-import { INPUT_DATE, OUTPUT_DATE, TODAY_DATE } from "./types";
+import { INPUT_DATE, OUTPUT_DATE, TODAY_DATE, COLOR_DATE } from "./types";
 import {Date_send} from '../components/main/CalendarForm';
 import {Today_send} from '../pages/MainPage';
 axios.defaults.withCredentials=true;
@@ -25,7 +25,17 @@ export function outputDate() {
     payload:request,
   }
 }
+export function colorDate() {
+  const request = axios
+  .get("http://3.34.183.92:4000/api/main/calendar", {params:{calendar}, withCredentials:true})
+  .then((response) => response.data)
+  .catch((error)=>console.log(error.response.data));
 
+  return{
+    type: COLOR_DATE,
+    payload:request,
+  }
+}
 export function todayDate() {
   const request = axios
   .get("http://3.34.183.92:4000/api/main/today", {params:{Today_send}, withCredentials:true})

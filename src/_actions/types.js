@@ -6,3 +6,4 @@ export const INPUT_PILL='input_pill';
 export const OUTPUT_PILL='ouput_pill';
 export const OUTPUT_DATE='output_date';
 export const TODAY_DATE='today_date';
+export const COLOR_DATE="color_date";

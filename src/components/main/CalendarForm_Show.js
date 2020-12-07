@@ -699,6 +699,7 @@ function CalendarForm_Detail(props) {
                 InputProps={{
                   readOnly: true,
                 }}
+                multiline
                 defaultValue={onMemoHandler}
                 style={{
                   width: "100%",
