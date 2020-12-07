@@ -22,7 +22,7 @@ function PillForm_Show(props) {
   const dispatch = useDispatch();
 
   const onClickHandler = (event) => {
-    props.history.push("/health_medi/" + props.match.params.name);
+    props.history.push("/health_medi/" + props.match.params.name +"/" + props.match.params.id);
   };
   
   var today = new Date();
@@ -135,11 +135,15 @@ function PillForm_Show(props) {
         >
           <div>
             💊 피임약 복용 여부
-            <div style={{ marginLeft: "10px" }}>{isControl} </div>
+            <div style={{ marginLeft: "10px" }}>{props.match.params.name}님은 오늘 피임약을 복용하셨습니다.</div>
           </div>
           <div>
-            💊 피임약 설정
-            
+            💊 피임약 설정 여부
+            <div style={{marginLeft:"10px", textAlign:'center'}}>
+              복용 시작 : 2020년 11월 23일<br/>
+              복용 종료 : 2020년 11월 27일<br/>
+              복용 알람 시각 : 오후 7시 5분
+            </div>
           </div>
         </div>
       </div>

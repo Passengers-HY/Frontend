@@ -15,13 +15,13 @@ function UnderbarForm_Health(props) {
 
 
   const onHomeHandler = (event) => {
-    props.history.push("/main/" + props.match.params.name);
+    props.history.push("/main/" + props.match.params.name +"/" + props.match.params.id);
   }
   const onCalendarHandler = (event) => {
-    props.history.push("/calendar/" + props.match.params.name);
+    props.history.push("/calendar/" + props.match.params.name +"/" + props.match.params.id);
   }
   const onShoppingHandler = (event) => {
-    props.history.push("/shopping/" + props.match.params.name);
+    props.history.push("/shopping/" + props.match.params.name +"/" + props.match.params.id);
   }
   const theme = createMuiTheme({
     palette: {

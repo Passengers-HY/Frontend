@@ -34,9 +34,9 @@ function MediForm(props) {
     dispatch(outputPill()).then((response) => {
       console.log("백에서 get으로 받은거 출력", response.payload);
       if (response.payload != "입력된 피임약 정보 없음") {
-        props.history.push("/health_show/" + props.match.params.name);
+        props.history.push("/health_show/" + props.match.params.name +"/" + props.match.params.id);
       } else {
-        props.history.push("/health/" + props.match.params.name);
+        props.history.push("/health/" + props.match.params.name +"/" + props.match.params.id);
       }
     });
   };
@@ -351,7 +351,7 @@ function MediForm(props) {
             </IconButton>
           }
         >
-          흔한 생리혈 색깔로, 호르몬 수치가 적당하고 혈액순환이 월활할 경우 밝은
+          흔한 생리혈 색깔로, 호르몬 수치가 적당하고 혈액순환이 원활할 경우 밝은
           빨간색의 생리혈이 나타나요. 그러나 지나치게 밝은 분홍빛을 띈다면
           에스트로겐 수치의 문제일수도 있어요. 다이어트 또한 과도한 알코올
           섭취로도 나타날 수 있어요.
@@ -419,7 +419,7 @@ function MediForm(props) {
         >
           질염에 감염되었을 가능성이 높다고 볼 수 있어요. 질염은 흔한 질병이지만
           방치하게 되면 더 큰 질병 또는 다른 질병을 야기하고 확대시킬 수
-          있답니다! 질염이 심각하지 않다고 가볍게 생각하지 말고 조기에 병원을
+          있답니다! 질염이 심각하지 않다고 가볍게 생각하지 말고 초기에 병원을
           찾는 것이 좋아요.
         </Alert>
       </Collapse>
@@ -452,7 +452,7 @@ function MediForm(props) {
         >
           오래된 생리혈이 나오는 것일 수 있으므로 생리 첫날 또는 끝자락 즈음
           이라면 걱정하지 않아도 돼요! 그러나 생리 기간 중 진한 갈색의 생리혈이
-          나온다면 이는 부정출혈로 자궁근종 또는 자궁내막증일 수 있어요.{" "}
+          나온다면 이는 부정출혈로 자궁근종 또는 자궁내막증일 수 있어요.
         </Alert>
       </Collapse>
       <Collapse

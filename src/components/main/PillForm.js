@@ -16,7 +16,7 @@ import IconButton from "@material-ui/core/IconButton";
 import Collapse from "@material-ui/core/Collapse";
 import CloseIcon from "@material-ui/icons/Close";
 var date;
-var isControl;
+var isControl="로딩중입니다.";
 
 function PillForm(props) {
   const dispatch = useDispatch();
@@ -40,7 +40,7 @@ function PillForm(props) {
   };
 
   const onClickHandler = (event) => {
-    props.history.push("/health_medi/" + props.match.params.name);
+    props.history.push("/health_medi/" + props.match.params.name +"/" + props.match.params.id);
   };
 
   const onSubmitHandler = (event) => {
@@ -106,6 +106,7 @@ function PillForm(props) {
     };
     dispatch(outputPill(body)).then((response) => {
       console.log("백에서 get으로 받은거 출력", response.payload);
+      
       if (response.payload === "오늘 피임약 복용 완료") {
         isControl =
           props.match.params.name + "님은 오늘 피임약을 복용하셨습니다.";

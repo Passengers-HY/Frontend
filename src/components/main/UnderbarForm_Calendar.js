@@ -18,20 +18,20 @@ function UnderbarForm_Calendar(props) {
   const [value, setValue] = useState("Calendar");
 
   const onHomeHandler = (event) => {
-    props.history.push("/main/" + props.match.params.name);
+    props.history.push("/main/" + props.match.params.name +"/" + props.match.params.id);
   };
   const onHealthHandler = (event) => {
     dispatch(outputPill()).then((response) => {
       console.log("백에서 get으로 받은거 출력", response.payload);
       if (response.payload != "입력된 피임약 정보 없음") {
-        props.history.push("/health_show/" + props.match.params.name);
+        props.history.push("/health_show/" + props.match.params.name +"/" + props.match.params.id);
       } else {
-        props.history.push("/health/" + props.match.params.name);
+        props.history.push("/health/" + props.match.params.name +"/" + props.match.params.id);
       }
     });
   };
   const onShoppingHandler = (event) => {
-    props.history.push("/shopping/" + props.match.params.name);
+    props.history.push("/shopping/" + props.match.params.name +"/" + props.match.params.id);
   };
   const theme = createMuiTheme({
     palette: {

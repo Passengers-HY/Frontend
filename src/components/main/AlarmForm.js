@@ -59,7 +59,7 @@ function AlarmForm(props) {
             <div style={{fontSize:'60px'}}>{Time}</div>
             {props.match.params.name}님, 피임약 복용할 시간입니다. <br/>
             <br/>
-            <Button variant="contained" color="primary" size="big" style={{width:'40%', borderRadius:'40px'}}>
+            <Button variant="contained" color="primary" size="large" style={{width:'40%', borderRadius:'40px'}}>
         중단
       </Button>
         </div>

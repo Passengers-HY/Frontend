@@ -7,7 +7,6 @@ import { FiLogOut } from 'react-icons/fi';
 
 function MainForm(props) {
   const dispatch = useDispatch();
-
   const onClickHandler = (event) => {
     dispatch(logoutUser()).then((response) => {
       if (response.payload === "로그아웃 되었습니다") {
