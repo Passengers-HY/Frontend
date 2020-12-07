@@ -49,7 +49,7 @@ function LoginForm(props) {
         //alert("잘못된 이메일입니다. 확인하고 다시 시도해주세요.");
       } else if (response.payload != "") {
         console.log("로그인 성공 후 메인 페이지 로드");
-        props.history.push("/main/" + response.payload.name);
+        props.history.push("/main/" + response.payload.name + "/" + response.payload.id);
       } else {
         console.log("로그인 실패");
         document.getElementById("error").style.display = "block";
