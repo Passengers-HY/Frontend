@@ -1,6 +1,7 @@
 import axios from "axios";
 import { INPUT_DATE, OUTPUT_DATE, TODAY_DATE, COLOR_DATE } from "./types";
 import {Date_send} from '../components/main/CalendarForm';
+import {calendar} from '../components/main/CalendarForm';
 import {Today_send} from '../pages/MainPage';
 axios.defaults.withCredentials=true;
 export function inputDate(dataTosubmit) { 
