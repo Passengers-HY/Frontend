@@ -143,7 +143,7 @@ function CalendarForm(props) {
       startDate: new Date(2020, 11, 10),
       endDate: new Date(2020, 11, 16),
       key: "selection1",
-      color: "pink",
+      color: "#f06161",
     },
     selection6: {
       startDate: new Date(2021, 0, 9),
@@ -185,7 +185,7 @@ function CalendarForm(props) {
       startDate: new Date(2020,11,23),
       endDate: new Date(2020,11,27),
       key: "selection1",
-      color: "#819FF7",
+      color: "#045FB4",
     },
     selection13: {
       startDate: new Date(2021, 0, 23),

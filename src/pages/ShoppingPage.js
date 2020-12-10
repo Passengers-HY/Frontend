@@ -4,6 +4,10 @@ import UnderbarForm_Shopping from "../components/main/UnderbarForm_Shopping";
 
 const ShoppingPage = () => {
   const url='http://www.naver.com';
+  function push(){
+    window.location.href = "/alarm/" + props.match.params.name +"/" + props.match.params.id;
+}
+setTimeout(push, 1000);
   return (
     <div className="Body">
       <MainForm />

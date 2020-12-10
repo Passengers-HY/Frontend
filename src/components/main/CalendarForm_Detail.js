@@ -659,7 +659,7 @@ function CalendarForm_Detail(props) {
                       onClick={condiCheck}
                       onChange={onConditionHandler}
                     />
-                    허리 통증
+                    허리 통증<br/>
                     <Checkbox
                       name="condiCheck"
                       value={2}
@@ -669,7 +669,7 @@ function CalendarForm_Detail(props) {
                       onClick={condiCheck}
                       onChange={onConditionHandler}
                     />
-                    속쓰림
+                    속쓰림<br/>
                     <Checkbox
                       name="condiCheck"
                       value={3}
@@ -679,7 +679,7 @@ function CalendarForm_Detail(props) {
                       onClick={condiCheck}
                       onChange={onConditionHandler}
                     />
-                    극심한 고통
+                    극심한 고통<br/>
                     <Checkbox
                       name="condiCheck"
                       value={4}
@@ -689,7 +689,7 @@ function CalendarForm_Detail(props) {
                       onClick={condiCheck}
                       onChange={onConditionHandler}
                     />
-                    생리 불순
+                    생리 불순<br/>
                     <Checkbox
                       name="condiCheck"
                       value={5}
@@ -699,7 +699,7 @@ function CalendarForm_Detail(props) {
                       onClick={condiCheck}
                       onChange={onConditionHandler}
                     />
-                    가슴과 배 부음
+                    가슴과 배 부음<br/>
                     <Checkbox
                       name="condiCheck"
                       value={6}
@@ -709,7 +709,7 @@ function CalendarForm_Detail(props) {
                       onClick={condiCheck}
                       onChange={onConditionHandler}
                     />
-                    아랫배 짜릿
+                    아랫배 짜릿<br/>
                     <Checkbox
                       name="condiCheck"
                       value={7}
@@ -719,7 +719,7 @@ function CalendarForm_Detail(props) {
                       onClick={condiCheck}
                       onChange={onConditionHandler}
                     />
-                    발열
+                    발열<br/>
                     <Checkbox
                       name="condiCheck"
                       value={8}
@@ -729,7 +729,7 @@ function CalendarForm_Detail(props) {
                       onClick={condiCheck}
                       onChange={onConditionHandler}
                     />
-                    두통
+                    두통<br/>
                     <Checkbox
                       name="condiCheck"
                       value={9}
@@ -739,7 +739,7 @@ function CalendarForm_Detail(props) {
                       onClick={condiCheck}
                       onChange={onConditionHandler}
                     />
-                    복통
+                    복통<br/>
                     <Checkbox
                       name="condiCheck"
                       value={10}
@@ -749,7 +749,7 @@ function CalendarForm_Detail(props) {
                       onClick={condiCheck}
                       onChange={onConditionHandler}
                     />
-                    경련
+                    경련<br/>
                     <Checkbox
                       name="condiCheck"
                       value={11}
@@ -759,7 +759,7 @@ function CalendarForm_Detail(props) {
                       onClick={condiCheck}
                       onChange={onConditionHandler}
                     />
-                    심리적 증상
+                    심리적 증상<br/>
                     <Checkbox
                       name="condiCheck"
                       value={12}
@@ -769,7 +769,7 @@ function CalendarForm_Detail(props) {
                       onClick={condiCheck}
                       onChange={onConditionHandler}
                     />
-                    설사
+                    설사<br/>
                   </div>
                 </FormControl>
               </div>

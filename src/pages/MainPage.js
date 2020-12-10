@@ -85,7 +85,7 @@ const MainPage = (props) => {
         >
           생리
           <br />
-          1일 지연
+          2일차
         </span>
       </div>
       <div style={{padding:'10%', marginTop:'20px', textAlign:'center'}}>
