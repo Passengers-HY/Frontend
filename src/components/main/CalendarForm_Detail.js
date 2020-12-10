@@ -922,7 +922,7 @@ function CalendarForm_Detail(props) {
   );
 }
 
-export default withRouter(CalendarForm_Detail);
+export default withRouter(CalendarForm_Detail); 
 
 /*
 <Button
