@@ -196,12 +196,12 @@ function CalendarForm_Detail(props) {
     if (cycleStart === "") {
       cycle_Start = null;
     } else {
-      cycle_Start = cycleStart;
+      cycle_Start = date;
     }
     if (cycleEnd === "") {
       cycle_End = null;
     } else {
-      cycle_End = cycleEnd;
+      cycle_End = date;
     }
     if (isControl === "") {
       // is_Control = null;
@@ -639,6 +639,7 @@ function CalendarForm_Detail(props) {
                     component="legend"
                     onClick={condiDisplay}
                     style={{
+                      cursor:"pointer",
                       fontFamily: "IBMPlexSansKR-Regular",
                       marginTop: "1rem",
                     }}
@@ -780,6 +781,7 @@ function CalendarForm_Detail(props) {
                     component="legend"
                     onClick={moodDisplay}
                     style={{
+                      cursor:"pointer",
                       fontFamily: "IBMPlexSansKR-Regular",
                       marginTop: "1rem",
                     }}

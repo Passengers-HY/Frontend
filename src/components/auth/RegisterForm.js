@@ -36,6 +36,7 @@ function RegisterForm(props) {
   const [meanPeriod, setmeanPeriod] = useState("");
   const [meanCycle, setmeanCycle] = useState("");
   const [userAlcohol, setuserAlcohol] = useState("");
+  const [userStomach, setuserStomach] = useState("");
 
   const onNameHandler = (event) => {
     setName(event.currentTarget.value);
@@ -73,6 +74,9 @@ function RegisterForm(props) {
   const onUserAlcoholHandler = (event) => {
     setuserAlcohol(event.currentTarget.value);
   };
+  const onUserStomachHandler = (event) => {
+    setuserStomach(event.currentTarget.value);
+  }
   const checkPassword = (password) => {
     if (userPassword !== password) {
       return true;
@@ -108,6 +112,7 @@ function RegisterForm(props) {
     var mean_Period;
     var mean_Cycle;
     var user_Alcohol;
+    var user_Stomach;
 
     if (userBirth === "") {
       user_Birth = null;
@@ -150,6 +155,11 @@ function RegisterForm(props) {
     } else {
       user_Alcohol = userAlcohol;
     }
+    if (userStomach === "") {
+      user_Stomach = null;
+    } else{
+      user_Stomach = userStomach;
+    }
 
     let body = {
       userName: userName,
@@ -163,6 +173,7 @@ function RegisterForm(props) {
       meanPeriod: mean_Period,
       meanCycle: mean_Cycle,
       userAlcohol: user_Alcohol,
+      userStomach: user_Stomach
     };
 
     dispatch(registerUser(body)).then((response) => {
@@ -493,6 +504,7 @@ function RegisterForm(props) {
           </MuiPickersUtilsProvider>
           <TextField
             color="primary"
+            required
             label="평균 생리 기간"
             type="number"
             value={meanPeriod}
@@ -509,6 +521,7 @@ function RegisterForm(props) {
             color="primary"
             label="평균 주기"
             type="number"
+            required
             InputProps={{ inputProps: { min: 0 } }}
             value={meanCycle}
             onChange={onmeanCycleHandler}
@@ -547,6 +560,43 @@ function RegisterForm(props) {
               <FormControlLabel
                 value="0"
                 onChange={onUserAlcoholHandler}
+                control={<Radio color="primary" />}
+                label="아니오"
+                className="Body"
+                style={{ fontFamily: "IBMPlexSansKR-Regular" }}
+              />
+            </RadioGroup>
+            </FormControl>
+          </ThemeProvider>
+        </div>
+        <div className="Body" style={{ marginTop: "1rem", textAlign:'center' }}>
+          <ThemeProvider theme={theme}>
+          <FormControl component="fieldset">
+            <FormLabel
+              component="legend"
+              color="primary"
+              style={{ fontFamily: "IBMPlexSansKR-Regular" }}
+            >
+              평소 앓고 계신 위장 장애가 있으신가요?
+            </FormLabel>
+            <RadioGroup
+              row
+              aria-label="position"
+              name="position"
+              defaultValue="top"
+              style={{margin:'auto', textAlign:"center"}}
+            >
+              <FormControlLabel
+                value="1"
+                onChange={onUserStomachHandler}
+                control={<Radio color="primary" />}
+                label="네"
+                className="Body"
+                style={{ fontFamily: "IBMPlexSansKR-Regular" }}
+              />
+              <FormControlLabel
+                value="0"
+                onChange={onUserStomachHandler}
                 control={<Radio color="primary" />}
                 label="아니오"
                 className="Body"

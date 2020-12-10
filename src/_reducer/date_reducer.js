@@ -1,4 +1,4 @@
-import {INPUT_DATE, OUTPUT_DATE, TODAY_DATE, COLOR_DATE} from '../_actions/types';
+import {INPUT_DATE, OUTPUT_DATE, TODAY_DATE, COLOR_DATE, COLOR_FIRST_DATE} from '../_actions/types';
 
 
 export default function (state = {}, action) {
@@ -10,6 +10,9 @@ export default function (state = {}, action) {
       return {...state, dateSuccess:action.payload};
       break;
     case TODAY_DATE:
+      return {...state, dateSuccess:action.payload};
+      break;
+    case COLOR_DATE:
       return {...state, dateSuccess:action.payload};
       break;
     default:

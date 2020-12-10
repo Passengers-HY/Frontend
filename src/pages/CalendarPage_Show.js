@@ -1,6 +1,5 @@
 import React from "react";
 import MainForm from "../components/main/MainForm";
-import scheduleIMG from "../images/schedule_navy_svg.svg";
 import CalendarForm_Show from '../components/main/CalendarForm_Show.js';
 import UnderbarForm_Calendar from "../components/main/UnderbarForm_Calendar";
 
@@ -9,7 +8,7 @@ const CalendarPage_Show = () => {
     <div className="Body">
       <MainForm />
       <CalendarForm_Show/>
-            <UnderbarForm_Calendar />
+      <UnderbarForm_Calendar />
 
     </div>
   );

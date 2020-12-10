@@ -1,6 +1,5 @@
 import React from "react";
 import MainForm from '../components/main/MainForm';
-import shoppingIMG from '../images/shopping_navy_svg.svg';
 import UnderbarForm_Shopping from "../components/main/UnderbarForm_Shopping";
 
 const ShoppingPage = () => {

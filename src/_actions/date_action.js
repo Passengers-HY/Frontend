@@ -6,7 +6,7 @@ import {Today_send} from '../pages/MainPage';
 axios.defaults.withCredentials=true;
 export function inputDate(dataTosubmit) { 
   const request = axios
-    .post("http://3.34.183.92:4000/api/main/date", dataTosubmit, {withCredentials:true})
+    .post("http://3.34.183.92:4000//api/main/date", dataTosubmit, {withCredentials:true})
     .then((response) => response.data)
     .catch((error)=>console.log(error.response.data));
   return {
@@ -20,13 +20,14 @@ export function outputDate() {
   .get("http://3.34.183.92:4000/api/main", {params:{Date_send}, withCredentials:true})
   .then((response) => response.data)
   .catch((error)=>console.log(error.response.data));
-
+  
   return{
     type: OUTPUT_DATE,
     payload:request,
   }
 }
 export function colorDate() {
+  console.log(calendar);
   const request = axios
   .get("http://3.34.183.92:4000/api/main/calendar", {params:{calendar}, withCredentials:true})
   .then((response) => response.data)
@@ -37,6 +38,7 @@ export function colorDate() {
     payload:request,
   }
 }
+
 export function todayDate() {
   const request = axios
   .get("http://3.34.183.92:4000/api/main/today", {params:{Today_send}, withCredentials:true})

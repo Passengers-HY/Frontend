@@ -1,6 +1,5 @@
 import React from "react";
 import MainForm from "../components/main/MainForm";
-import pillIMG from '../images/pill_navy_svg.svg';
 import MediForm from '../components/main/MediForm.js';
 import UnderbarForm_Health from "../components/main/UnderbarForm_Health";
 

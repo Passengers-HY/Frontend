@@ -10,6 +10,7 @@ var Today_send = 0;
 let Body;
 
 const MainPage = (props) => {
+  console.log(props);
 
   var message = ["오늘은 좋은 일만 가득할 거예요!", "오늘은 행운이 가득할 거예요!", "조금만 더 힘내세요!"];
   var sentence = message[Math.floor(Math.random()*message.length)];
@@ -84,7 +85,7 @@ const MainPage = (props) => {
         >
           생리까지
           <br />
-          1일
+          0일
         </span>
       </div>
       <div style={{padding:'10%', marginTop:'20px', textAlign:'center'}}>

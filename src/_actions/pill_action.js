@@ -1,6 +1,5 @@
 import axios from "axios";
 import { INPUT_PILL, OUTPUT_PILL } from "./types";
-
 axios.defaults.withCredentials=true;
 export function inputPill(dataTosubmit) {
   const request = axios

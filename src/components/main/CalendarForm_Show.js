@@ -215,7 +215,7 @@ function CalendarForm_Detail(props) {
     }
   }
 
-  let onMoodHandler=false;
+  var onMoodHandler=false;
   if(Body.dateMood===1){
     onMoodHandler="1";
   } else if(Body.dateMood===2){
