@@ -140,9 +140,9 @@ function PillForm_Show(props) {
           <div>
             💊 피임약 설정 여부
             <div style={{marginLeft:"10px", textAlign:'center'}}>
-              복용 시작 : 2020년 11월 23일<br/>
-              복용 종료 : 2020년 11월 27일<br/>
-              복용 알람 시각 : 오후 7시 5분
+              복용 시작 : 2020년 12월 11일<br/>
+              복용 종료 : 2020년 12월 17일<br/>
+              복용 알람 시각 : 오전 9시 
             </div>
           </div>
         </div>

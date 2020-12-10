@@ -83,9 +83,9 @@ const MainPage = (props) => {
             textAlign: "center",
           }}
         >
-          생리까지
+          생리
           <br />
-          0일
+          1일 지연
         </span>
       </div>
       <div style={{padding:'10%', marginTop:'20px', textAlign:'center'}}>
