@@ -635,9 +635,8 @@ function CalendarForm_Detail(props) {
               </div>
               <div>
                 <FormControl component="fieldset">
-                  <FormLabel
+                  <span onClick={condiDisplay}><FormLabel
                     component="legend"
-                    onClick={condiDisplay}
                     style={{
                       cursor:"pointer",
                       fontFamily: "IBMPlexSansKR-Regular",
@@ -646,7 +645,7 @@ function CalendarForm_Detail(props) {
                   >
                     몸 상태 기록
                     <FiChevronDown />
-                  </FormLabel>
+                  </FormLabel></span>
                   <div
                     id="condition"
                     style={{ marginLeft: "20px", display: "none" }}
@@ -777,9 +776,9 @@ function CalendarForm_Detail(props) {
 
               <div>
                 <FormControl component="fieldset">
-                  <FormLabel
+                  <span onClick={moodDisplay}
+><FormLabel
                     component="legend"
-                    onClick={moodDisplay}
                     style={{
                       cursor:"pointer",
                       fontFamily: "IBMPlexSansKR-Regular",
@@ -787,7 +786,7 @@ function CalendarForm_Detail(props) {
                     }}
                   >
                     기분 <FiChevronDown />
-                  </FormLabel>
+                  </FormLabel></span>
                   <div
                     id="mood"
                     style={{ marginLeft: "20px", display: "none" }}
