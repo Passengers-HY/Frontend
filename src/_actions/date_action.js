@@ -6,7 +6,7 @@ import {Today_send} from '../pages/MainPage';
 axios.defaults.withCredentials=true;
 export function inputDate(dataTosubmit) { 
   const request = axios
-    .post("http://3.34.183.92:4000//api/main/date", dataTosubmit, {withCredentials:true})
+    .post("http://3.34.183.92:4000/api/main/date", dataTosubmit, {withCredentials:true})
     .then((response) => response.data)
     .catch((error)=>console.log(error.response.data));
   return {
