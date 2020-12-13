@@ -1,6 +1,7 @@
 # Frontend
 
-#### 설치 방법
+
+### 📍 실행 방법
 ```
 $ npm install
 $ npm run build
@@ -8,6 +9,7 @@ $ npm run build
 build 파일 백엔드에 추가
 
 
+### 📍 페이지 소개
 * #### 초기 페이지
 ![](https://images.velog.io/images/passengers/post/a74d1fe0-9c30-4aca-b2fa-b6fb983cb7f6/image.png)
 &nbsp;&nbsp;&nbsp;&nbsp;앱 아이콘을 클릭하면 1초 동안 진입 화면이 실행된 후 로그인 화면으로 이동한다. </br>
