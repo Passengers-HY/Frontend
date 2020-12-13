@@ -5,7 +5,7 @@
 $ npm install
 $ npm run build
 ```
-build 파일 백엔드
+build 파일 백엔드에 추가
 
 
 * #### 초기 페이지
