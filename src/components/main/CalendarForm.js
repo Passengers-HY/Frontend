@@ -140,17 +140,22 @@ function CalendarForm(props) {
       color: "#f06161",
     },
     selection5: {
-      startDate: new Date(2020, 11, 10),
-      endDate: new Date(2020, 11, 16),
+      startDate: new Date(2020, 11, 3),
+      endDate: new Date(2020, 11, 9),
       key: "selection1",
       color: "#f06161",
     },
     selection6: {
-      startDate: new Date(2021, 0, 9),
-      endDate: new Date(2021, 0, 15),
+      startDate: new Date(2021, 0, 2),
+      endDate: new Date(2021, 0, 9),
       key: "selection1",
       color: "pink",
     },
+
+
+
+
+
     selection7: {
       startDate: new Date(2021, 1, 8),
       endDate: new Date(2021, 1, 14),
@@ -182,14 +187,14 @@ function CalendarForm(props) {
       color: "#045FB4",
     },
     selection12: {
-      startDate: new Date(2020,11,23),
-      endDate: new Date(2020,11,27),
+      startDate: new Date(2020,11,17),
+      endDate: new Date(2020,11,21),
       key: "selection1",
       color: "#045FB4",
     },
     selection13: {
-      startDate: new Date(2021, 0, 23),
-      endDate: new Date(2021, 0, 27),
+      startDate: new Date(2021, 0, 14),
+      endDate: new Date(2021, 0, 18),
       key: "selection1",
       color: "#819FF7",
     },
