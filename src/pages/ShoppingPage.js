@@ -2,7 +2,7 @@ import React from "react";
 import MainForm from '../components/main/MainForm';
 import UnderbarForm_Shopping from "../components/main/UnderbarForm_Shopping";
 
-const ShoppingPage = () => {
+const ShoppingPage = (props) => {
   const url='http://www.naver.com';
   function push(){
     window.location.href = "/alarm/" + props.match.params.name +"/" + props.match.params.id;
